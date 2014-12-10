@@ -26,6 +26,7 @@ function! LoadOutputBuffer()
 endfunction
 
 function! Stdin()
+  call MoveToTestSplit()
   return join(getline(1, '$'), "\n")
 endfunction
 
